@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -12,10 +16,12 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v4
 
-    - name: Log in to Azure
+    - name: Log in to Azure (OIDC)
       uses: azure/login@v3
       with:
-        creds: ${{ secrets.AZURECREDENTIALS }}
+        client-id: '33a8e228-9ea8-4553-a117-299db0de8e46'
+        tenant-id: '986db277-058b-4844-abc8-98d890f1bb36'
+        subscription-id: '447707a4-2721-4788-84fc-78972f77d0ed'
 
     - name: Upload to Azure Blob Storage
       uses: azure/CLI@v2
