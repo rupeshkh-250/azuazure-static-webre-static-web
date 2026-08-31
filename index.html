@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Azure DevOps Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #0078d4; /* Azure Blue */
+            --accent-success: #10b981;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
+            text-align: center;
+        }
+
+        .badge {
+            background-color: rgba(16, 185, 129, 0.1);
+            color: var(--accent-success);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.2rem;
+            color: var(--text-main);
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .tech-item {
+            background: #475569;
+            color: var(--text-main);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .footer {
+            border-top: 1px solid #334155;
+            padding-top: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .footer strong {
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="badge">🚀 CI/CD Pipeline Live</span>
+        <h1>Hello World!</h1>
+        <p>Welcome to my cloud playground. This static website was fully automated and deployed using a production-ready DevOps workflow.</p>
+        
+        <div class="tech-stack">
+            <span class="tech-item">Azure Blob Storage</span>
+            <span class="tech-item">GitHub Actions</span>
+            <span class="tech-item">Azure CLI</span>
+            <span class="tech-item">Git</span>
+        </div>
+
+        <div class="footer">
+            Managed via <a href="https://github.com" style="color: var(--accent); text-decoration: none; font-weight: bold;">GitHub</a> • Hosted on <strong>Microsoft Azure</strong>
+        </div>
+    </div>
+
+</body>
+</html>
